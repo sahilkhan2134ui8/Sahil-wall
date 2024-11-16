@@ -38,19 +38,6 @@ print(Fore.CYAN + logo +  Style.RESET_ALL)
 
 
     
-# Prompt Password 
-def pas():
-    print('\u001b[37m' + '---------------------------------------------------')
-    password = input("Password : ") 
-    print('--------------------------------------------')
-    mmm = requests.get('https://pastebin.com/raw/tGiQEsgb').text
-
-    if mmm not in password:
-        print('[-] <==> Incorrect Password!')
-        sys.exit()
-        
-pas()
-
 # Prompt for cookie file
 cookie_file = input("ENTER cookie FILE PATH : ")
 print('--------------------------------------------')
